@@ -6,3 +6,7 @@ stories:
   - action: utter_greet
   - intent: subscribe
   - action: utter_subscribed
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
