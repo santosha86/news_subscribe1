@@ -6,7 +6,9 @@ stories:
   - action: utter_greet
   - intent: subscribe
   - action: utter_subscribed
-- story: greet
+- story: inform
   steps:
   - intent: greet
   - action: utter_greet
+  - intent: inform
+  - action: utter_ask_email
