@@ -5,8 +5,18 @@ intents:
 - greet
 - inform
 - subscribe
+entities:
+- name
+- email
+- dept
 slots:
+  dept:
+    type: unfeaturized
+    influence_conversation: false
   email:
+    type: unfeaturized
+    influence_conversation: false
+  name:
     type: unfeaturized
     influence_conversation: false
 responses:
@@ -23,3 +33,6 @@ actions:
 - utter_greet
 - utter_subscribed
 - utter_ask_email
+- utter_ask_name
+- utter_ask_dept
+- action_subscribe

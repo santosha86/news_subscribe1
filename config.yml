@@ -20,4 +20,5 @@ policies:
   epochs: 100
 - name: MappingPolicy
 - name: FallbackPolicy
+- name: RulePolicy
 - name: FormPolicy
