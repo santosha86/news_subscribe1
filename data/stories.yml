@@ -1,24 +1,9 @@
 version: "2.0"
-stories:
-- story: greet and subscribe
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: subscribe
-  - action: action_subscribe
-- story: inform
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: inform
-  - action: utter_ask_email
-  - intent: subscribe
-  - action: action_subscribe
 rules:
 - rule: Activate form
   steps:
   - intent: subscribe
-  - action: utter_subscribe
+  - action: action_subscribe
   - action: sub_form
   - active_loop: sub_form
 - rule: Submit form
