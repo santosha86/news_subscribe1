@@ -15,6 +15,7 @@ pipeline:
   epochs: 100
 policies:
 - name: MemoizationPolicy
+- name: TEDPolicy
 - name: MappingPolicy
 - name: FallbackPolicy
 - name: RulePolicy
