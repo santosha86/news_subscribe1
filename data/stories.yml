@@ -5,10 +5,12 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: subscribe
-  - action: utter_subscribed
+  - action: action_subscribe
 - story: inform
   steps:
   - intent: greet
   - action: utter_greet
   - intent: inform
   - action: utter_ask_email
+  - intent: subscribe
+  - action: action_subscribe
