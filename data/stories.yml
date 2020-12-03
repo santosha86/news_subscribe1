@@ -18,6 +18,6 @@ rules:
   - action: sub_form
   - active_loop: null
   - slot_was_set:
-    - requested_slot: name
+    - requested_slot: null
   - action: action_submit
   - active_loop: null
