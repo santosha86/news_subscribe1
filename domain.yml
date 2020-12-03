@@ -40,7 +40,7 @@ responses:
 actions:
 - '...'
 - utter_greet
-- utter_subscribed
+- utter_subscribe
 - utter_ask_email
 - utter_ask_name
 - utter_ask_dept
