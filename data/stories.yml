@@ -14,3 +14,19 @@ stories:
   - action: utter_ask_email
   - intent: subscribe
   - action: action_subscribe
+rules:
+- rule: Activate form
+  steps:
+  - intent: subscribe
+  - action: utter_subscribe
+  - action: sub_form
+  - active_loop: sub_form
+- rule: Submit form
+  condition:
+  - active_loop: sub_form
+  steps:
+  - action: sub_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot:null: null
+  - action: action_submit

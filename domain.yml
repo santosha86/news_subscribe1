@@ -9,6 +9,9 @@ entities:
 - name
 - email
 - dept
+- Name
+- emailid
+- department
 slots:
   dept:
     type: unfeaturized
@@ -17,6 +20,9 @@ slots:
     type: unfeaturized
     influence_conversation: false
   name:
+    type: unfeaturized
+    influence_conversation: false
+  requested_slot:null:
     type: unfeaturized
     influence_conversation: false
 responses:
@@ -28,6 +34,9 @@ responses:
   utter_subscribed:
   - text: "Check your inbox at {email} in order to finish subscribing to the newsletter!\n"
   - text: You're all set! Check your inbox at {email} to confirm your subscription.
+  utter_thanks:
+  - text: Thanks for the details! Just to confirm - You are {Name} and your email-id
+      is {emailid} and you belong to department {department}
 actions:
 - '...'
 - utter_greet
@@ -36,3 +45,5 @@ actions:
 - utter_ask_name
 - utter_ask_dept
 - action_subscribe
+- sub_form
+- action_submit
