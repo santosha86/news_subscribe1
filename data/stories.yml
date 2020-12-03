@@ -4,7 +4,6 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - action: sub_form
 rules:
 - rule: Activate form
   steps:
