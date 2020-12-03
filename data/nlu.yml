@@ -20,4 +20,5 @@ nlu:
     - The name is [Sikara](name)
     - My department is [cse](dept)
     - My email is[ example@example.com](email)
-    - I belong to department [engineering](dept)
+    - I want to subscribe
+    - My department is [ece](dept)
