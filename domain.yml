@@ -43,7 +43,6 @@ responses:
   utter_ask_dept:
   - text: What is your department?
 actions:
-- '...'
 - utter_greet
 - utter_subscribe
 - utter_ask_email
