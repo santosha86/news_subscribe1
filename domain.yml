@@ -49,13 +49,15 @@ actions:
 - utter_ask_name
 - utter_ask_dept
 - action_subscribe
-- subform
 - action_submit
 forms:
   user_details_form:
+    dept:
+    - entity: dept
+      type: from_entity
+    email:
+    - entity: email
+      type: from_entity
     name:
     - entity: name
-      type: from_entity
-    number:
-    - entity: number
       type: from_entity
