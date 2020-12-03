@@ -32,7 +32,7 @@ responses:
   utter_ask_email:
   - text: "What is your email address?\n"
   - text: What is your email?
-  utter_subscribed:
+  utter_subscribe:
   - text: "Check your inbox at {email} in order to finish subscribing to the newsletter!\n"
   - text: You're all set! Check your inbox at {email} to confirm your subscription.
   utter_thanks:
