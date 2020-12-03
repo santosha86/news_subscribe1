@@ -11,6 +11,7 @@ rules:
   - action: action_subscribe
   - action: user_details_form
   - active_loop: user_details_form
+  wait_for_user_input: false
 - rule: Submit form
   condition:
   - active_loop: user_details_form
