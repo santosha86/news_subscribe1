@@ -9,13 +9,13 @@ rules:
   steps:
   - intent: subscribe
   - action: action_subscribe
-  - action: sub_form
-  - active_loop: sub_form
+  - action: user_details_form
+  - active_loop: user_details_form
 - rule: Submit form
   condition:
-  - active_loop: sub_form
+  - active_loop: user_details_form
   steps:
-  - action: sub_form
+  - action: user_details_form
   - active_loop: null
   - slot_was_set:
     - requested_slot: null

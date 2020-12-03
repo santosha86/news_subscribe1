@@ -36,8 +36,8 @@ responses:
   - text: "Check your inbox at {email} in order to finish subscribing to the newsletter!\n"
   - text: You're all set! Check your inbox at {email} to confirm your subscription.
   utter_thanks:
-  - text: Thanks for the details! Just to confirm - You are {Name} and your email-id
-      is {emailid} and you belong to department {department}
+  - text: Thanks for the details! Just to confirm - You are {name} and your email-id
+      is {email} and you belong to department {dept}
   utter_ask_name:
   - text: What is your name?
   utter_ask_dept:
