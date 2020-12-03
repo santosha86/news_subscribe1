@@ -18,7 +18,6 @@ nlu:
     - Email is [something@example.com](email)
     - My name is [Sai Charan Tej](name)
     - The name is [Sikara](name)
-    - My department is [cse](department)
 - intent: inform
   examples: |
     - My email is example@example.com
